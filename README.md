@@ -84,6 +84,10 @@ python3 projector.py --example circuit         # PCB layout
 - **[Composition Guide](PROJECTOR-GUIDE.md).** Element reference, composition patterns, and lessons from building 34 examples
 - **[Showcase](SHOWCASE.md).** Rendered output gallery demonstrating every element type
 
+## Support
+
+If Projector is useful to you, consider supporting the work: [ko-fi.com/arkitecc](https://ko-fi.com/arkitecc)
+
 ## License
 
 Apache 2.0
