@@ -1,0 +1,94 @@
+{
+    "type": "box", "title": "❋  T H E   S A C R E D   G A R D E N  ❋", "style": "double",
+    "children": [
+        {"type": "label", "text": "「 WHERE GEOMETRY BLOOMS AND THE DIVINE TAKES ROOT 」", "align": "center"},
+        {"type": "separator", "char": "═"},
+        {
+            "type": "board", "w": 90, "h": 7, "border": false, "pad": 0,
+            "children": [
+                {"type": "fill", "x": 0, "y": 0, "w": 90, "h": 7, "char": " "},
+                {"type": "fill", "x": 2, "y": 3, "w": 9, "h": 4, "char": "♣"},
+                {"type": "fill", "x": 79, "y": 3, "w": 9, "h": 4, "char": "♣"},
+                {"type": "label", "text": "✧", "x": 8, "y": 1},
+                {"type": "label", "text": "·", "x": 22, "y": 3},
+                {"type": "label", "text": "★", "x": 38, "y": 0},
+                {"type": "label", "text": "✦", "x": 44, "y": 2},
+                {"type": "label", "text": "☽", "x": 65, "y": 1},
+                {"type": "label", "text": "✧", "x": 52, "y": 4},
+                {"type": "label", "text": "·", "x": 78, "y": 2},
+                {"type": "label", "text": "✧", "x": 15, "y": 5},
+                {"type": "label", "text": "·", "x": 70, "y": 0}
+            ]
+        },
+        {
+            "type": "canvas", "mode": "block", "w": 90, "h": 38,
+            "draw": [
+                {"cmd": "polygon", "points": [[90, 10], [138, 24], [138, 52], [90, 66], [42, 52], [42, 24]]},
+                {"cmd": "polygon", "points": [[90, 24], [114, 31], [114, 45], [90, 52], [66, 45], [66, 31]]},
+                {"cmd": "polygon", "points": [[90, 31], [102, 35], [102, 41], [90, 45], [78, 41], [78, 35]]},
+
+                {"cmd": "line", "x0": 90, "y0": 10, "x1": 90, "y1": 66},
+                {"cmd": "line", "x0": 42, "y0": 24, "x1": 138, "y1": 52},
+                {"cmd": "line", "x0": 138, "y0": 24, "x1": 42, "y1": 52},
+
+                {"cmd": "circle", "cx": 90, "cy": 24, "r": 8},
+                {"cmd": "circle", "cx": 114, "cy": 31, "r": 8},
+                {"cmd": "circle", "cx": 114, "cy": 45, "r": 8},
+                {"cmd": "circle", "cx": 90, "cy": 52, "r": 8},
+                {"cmd": "circle", "cx": 66, "cy": 45, "r": 8},
+                {"cmd": "circle", "cx": 66, "cy": 31, "r": 8},
+                {"cmd": "circle", "cx": 90, "cy": 38, "r": 8},
+
+                {"cmd": "circle", "cx": 90, "cy": 38, "r": 3, "fill": true},
+
+                {"cmd": "circle", "cx": 22, "cy": 14, "r": 8},
+                {"cmd": "circle", "cx": 158, "cy": 14, "r": 8},
+                {"cmd": "circle", "cx": 22, "cy": 62, "r": 8},
+                {"cmd": "circle", "cx": 158, "cy": 62, "r": 8},
+                {"cmd": "circle", "cx": 22, "cy": 14, "r": 3, "fill": true},
+                {"cmd": "circle", "cx": 158, "cy": 14, "r": 3, "fill": true},
+                {"cmd": "circle", "cx": 22, "cy": 62, "r": 3, "fill": true},
+                {"cmd": "circle", "cx": 158, "cy": 62, "r": 3, "fill": true},
+
+                {"cmd": "circle", "cx": 90, "cy": 10, "r": 2, "fill": true},
+                {"cmd": "circle", "cx": 138, "cy": 24, "r": 2, "fill": true},
+                {"cmd": "circle", "cx": 138, "cy": 52, "r": 2, "fill": true},
+                {"cmd": "circle", "cx": 90, "cy": 66, "r": 2, "fill": true},
+                {"cmd": "circle", "cx": 42, "cy": 52, "r": 2, "fill": true},
+                {"cmd": "circle", "cx": 42, "cy": 24, "r": 2, "fill": true}
+            ]
+        },
+        {
+            "type": "board", "w": 90, "h": 3, "border": false, "pad": 0,
+            "children": [
+                {"type": "fill", "x": 0, "y": 0, "w": 90, "h": 3, "char": "░"},
+                {"type": "fill", "x": 41, "y": 0, "w": 8, "h": 3, "char": " "},
+                {"type": "label", "text": "▲", "x": 44, "y": 1}
+            ]
+        },
+        {"type": "separator", "char": "═"},
+        {
+            "type": "row", "gap": 6,
+            "children": [
+                {
+                    "type": "legend",
+                    "entries": [
+                        {"key": "○", "val": "Flower bed"},
+                        {"key": "●", "val": "Fountain"},
+                        {"key": "⬡", "val": "Hedge border"}
+                    ]
+                },
+                {
+                    "type": "legend",
+                    "entries": [
+                        {"key": "♣", "val": "Ancient tree"},
+                        {"key": "░", "val": "Stone path"},
+                        {"key": "✧", "val": "Starlight"}
+                    ]
+                }
+            ]
+        },
+        {"type": "separator", "char": "═"},
+        {"type": "label", "text": "◉  A S   I N   H E A V E N ,   S O   I N   E A R T H  ◉", "align": "center"}
+    ]
+}

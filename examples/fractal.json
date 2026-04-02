@@ -1,0 +1,107 @@
+{
+    "type": "box", "title": "◆  F R A C T A L   D E S C E N T  ◆", "style": "heavy",
+    "children": [
+        {"type": "label", "text": "「 SIERPINSKI GASKET — RECURSIVE DEPTH n 」", "align": "center"},
+        {"type": "separator", "char": "━"},
+        {
+            "type": "canvas", "mode": "block", "w": 76, "h": 40,
+            "draw": [
+                {"cmd": "polygon", "points": [[76, 9], [4, 71], [148, 71]]},
+
+                {"cmd": "polygon", "points": [[40, 40], [112, 40], [76, 71]]},
+
+                {"cmd": "polygon", "points": [[58, 25], [94, 25], [76, 40]]},
+                {"cmd": "polygon", "points": [[22, 56], [58, 56], [40, 71]]},
+                {"cmd": "polygon", "points": [[94, 56], [130, 56], [112, 71]]},
+
+                {"cmd": "polygon", "points": [[67, 17], [85, 17], [76, 25]]},
+                {"cmd": "polygon", "points": [[49, 33], [67, 33], [58, 40]]},
+                {"cmd": "polygon", "points": [[85, 33], [103, 33], [94, 40]]},
+                {"cmd": "polygon", "points": [[31, 48], [49, 48], [40, 56]]},
+                {"cmd": "polygon", "points": [[13, 64], [31, 64], [22, 71]]},
+                {"cmd": "polygon", "points": [[49, 64], [67, 64], [58, 71]]},
+                {"cmd": "polygon", "points": [[103, 48], [121, 48], [112, 56]]},
+                {"cmd": "polygon", "points": [[85, 64], [103, 64], [94, 71]]},
+                {"cmd": "polygon", "points": [[121, 64], [139, 64], [130, 71]]},
+
+                {"cmd": "polygon", "points": [[72, 13], [80, 13], [76, 17]]},
+                {"cmd": "polygon", "points": [[63, 21], [72, 21], [67, 25]]},
+                {"cmd": "polygon", "points": [[80, 21], [90, 21], [85, 25]]},
+                {"cmd": "polygon", "points": [[54, 29], [63, 29], [58, 33]]},
+                {"cmd": "polygon", "points": [[45, 37], [54, 37], [49, 40]]},
+                {"cmd": "polygon", "points": [[63, 37], [72, 37], [67, 40]]},
+                {"cmd": "polygon", "points": [[90, 29], [99, 29], [94, 33]]},
+                {"cmd": "polygon", "points": [[80, 37], [90, 37], [85, 40]]},
+                {"cmd": "polygon", "points": [[99, 37], [108, 37], [103, 40]]},
+                {"cmd": "polygon", "points": [[36, 44], [45, 44], [40, 48]]},
+                {"cmd": "polygon", "points": [[27, 52], [36, 52], [31, 56]]},
+                {"cmd": "polygon", "points": [[45, 52], [54, 52], [49, 56]]},
+                {"cmd": "polygon", "points": [[18, 60], [27, 60], [22, 64]]},
+                {"cmd": "polygon", "points": [[9, 68], [18, 68], [13, 71]]},
+                {"cmd": "polygon", "points": [[27, 68], [36, 68], [31, 71]]},
+                {"cmd": "polygon", "points": [[54, 60], [63, 60], [58, 64]]},
+                {"cmd": "polygon", "points": [[45, 68], [54, 68], [49, 71]]},
+                {"cmd": "polygon", "points": [[63, 68], [72, 68], [67, 71]]},
+                {"cmd": "polygon", "points": [[108, 44], [117, 44], [112, 48]]},
+                {"cmd": "polygon", "points": [[99, 52], [108, 52], [103, 56]]},
+                {"cmd": "polygon", "points": [[117, 52], [126, 52], [121, 56]]},
+                {"cmd": "polygon", "points": [[90, 60], [99, 60], [94, 64]]},
+                {"cmd": "polygon", "points": [[81, 68], [90, 68], [85, 71]]},
+                {"cmd": "polygon", "points": [[99, 68], [108, 68], [103, 71]]},
+                {"cmd": "polygon", "points": [[126, 60], [135, 60], [130, 64]]},
+                {"cmd": "polygon", "points": [[117, 68], [126, 68], [121, 71]]},
+                {"cmd": "polygon", "points": [[135, 68], [144, 68], [139, 71]]},
+
+                {"cmd": "circle", "cx": 76, "cy": 9, "r": 2, "fill": true},
+                {"cmd": "circle", "cx": 4, "cy": 71, "r": 2, "fill": true},
+                {"cmd": "circle", "cx": 148, "cy": 71, "r": 2, "fill": true},
+                {"cmd": "circle", "cx": 40, "cy": 40, "r": 1, "fill": true},
+                {"cmd": "circle", "cx": 112, "cy": 40, "r": 1, "fill": true},
+                {"cmd": "circle", "cx": 76, "cy": 71, "r": 1, "fill": true}
+            ]
+        },
+        {"type": "separator", "char": "━"},
+        {"type": "label", "text": "R E C U R S I O N   D E P T H", "align": "center"},
+        {"type": "spacer", "h": 1},
+        {
+            "type": "row", "gap": 2,
+            "children": [
+                {
+                    "type": "box", "title": "n = 0", "style": "rounded",
+                    "children": [{
+                        "type": "canvas", "mode": "block", "w": 20, "h": 12,
+                        "draw": [
+                            {"cmd": "polygon", "points": [[20, 2], [2, 22], [38, 22]]}
+                        ]
+                    }]
+                },
+                {
+                    "type": "box", "title": "n = 1", "style": "rounded",
+                    "children": [{
+                        "type": "canvas", "mode": "block", "w": 20, "h": 12,
+                        "draw": [
+                            {"cmd": "polygon", "points": [[20, 2], [2, 22], [38, 22]]},
+                            {"cmd": "polygon", "points": [[11, 12], [29, 12], [20, 22]]}
+                        ]
+                    }]
+                },
+                {
+                    "type": "box", "title": "n = 2", "style": "rounded",
+                    "children": [{
+                        "type": "canvas", "mode": "block", "w": 20, "h": 12,
+                        "draw": [
+                            {"cmd": "polygon", "points": [[20, 2], [2, 22], [38, 22]]},
+                            {"cmd": "polygon", "points": [[11, 12], [29, 12], [20, 22]]},
+                            {"cmd": "polygon", "points": [[16, 7], [25, 7], [20, 12]]},
+                            {"cmd": "polygon", "points": [[7, 17], [16, 17], [11, 22]]},
+                            {"cmd": "polygon", "points": [[25, 17], [34, 17], [29, 22]]}
+                        ]
+                    }]
+                }
+            ]
+        },
+        {"type": "separator", "char": "━"},
+        {"type": "label", "text": "D = log(3) / log(2) ≈ 1.585", "align": "center"},
+        {"type": "label", "text": "∞  S E L F - S I M I L A R I T Y   A T   E V E R Y   S C A L E  ∞", "align": "center"}
+    ]
+}

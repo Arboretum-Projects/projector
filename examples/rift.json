@@ -1,0 +1,61 @@
+{
+    "type": "box", "title": "⍟  T H E   R I F T  ⍟", "style": "heavy",
+    "children": [
+        {"type": "label", "text": "「 S A C R E D   G E O M E T R Y   M A N I F O L D 」", "align": "center"},
+        {"type": "separator", "char": "━"},
+        {
+            "type": "row", "gap": 1,
+            "children": [
+                {
+                    "type": "box", "style": "single", "w": 5,
+                    "children": [
+                        {"type": "label", "text": "ᚠ\nᚢ\nᚦ\nᚨ\nᚱ\nᚲ\nᚷ\nᚹ\nᚺ\nᚾ\nᛁ\nᛃ\nᛈ\nᛇ\nᛉ\nᛊ\nᛏ\nᛒ\nᛖ\nᛗ\nᛚ\nᛜ\nᛝ\nᛟ\nᛞ\nᚠ\nᚢ\nᚦ\nᚨ\nᚱ\nᚲ\nᚷ\nᚹ\nᚺ", "align": "center"}
+                    ]
+                },
+                {
+                    "type": "canvas", "mode": "block", "w": 72, "h": 36,
+                    "draw": [
+                        {"cmd": "circle", "cx": 72, "cy": 36, "r": 34},
+                        {"cmd": "circle", "cx": 72, "cy": 36, "r": 26},
+                        {"cmd": "circle", "cx": 72, "cy": 36, "r": 18},
+                        {"cmd": "circle", "cx": 72, "cy": 36, "r": 10},
+
+                        {"cmd": "polygon", "points": [[72, 6], [24, 52], [120, 52]]},
+                        {"cmd": "polygon", "points": [[72, 66], [24, 20], [120, 20]]},
+
+                        {"cmd": "polygon", "points": [[72, 16], [40, 46], [104, 46]]},
+                        {"cmd": "polygon", "points": [[72, 56], [40, 26], [104, 26]]},
+
+                        {"cmd": "line", "x0": 72, "y0": 1, "x1": 72, "y1": 71},
+                        {"cmd": "line", "x0": 1, "y0": 36, "x1": 143, "y1": 36},
+                        {"cmd": "line", "x0": 22, "y0": 6, "x1": 122, "y1": 66},
+                        {"cmd": "line", "x0": 122, "y0": 6, "x1": 22, "y1": 66},
+                        {"cmd": "line", "x0": 38, "y0": 2, "x1": 106, "y1": 70},
+                        {"cmd": "line", "x0": 106, "y0": 2, "x1": 38, "y1": 70},
+                        {"cmd": "line", "x0": 6, "y0": 16, "x1": 138, "y1": 56},
+                        {"cmd": "line", "x0": 138, "y0": 16, "x1": 6, "y1": 56},
+
+                        {"cmd": "circle", "cx": 72, "cy": 6, "r": 2, "fill": true},
+                        {"cmd": "circle", "cx": 72, "cy": 66, "r": 2, "fill": true},
+                        {"cmd": "circle", "cx": 24, "cy": 20, "r": 2, "fill": true},
+                        {"cmd": "circle", "cx": 120, "cy": 20, "r": 2, "fill": true},
+                        {"cmd": "circle", "cx": 24, "cy": 52, "r": 2, "fill": true},
+                        {"cmd": "circle", "cx": 120, "cy": 52, "r": 2, "fill": true},
+
+                        {"cmd": "circle", "cx": 72, "cy": 36, "r": 4, "fill": true}
+                    ]
+                },
+                {
+                    "type": "box", "style": "single", "w": 5,
+                    "children": [
+                        {"type": "label", "text": "ᛞ\nᛟ\nᛝ\nᛜ\nᛚ\nᛗ\nᛖ\nᛒ\nᛏ\nᛊ\nᛉ\nᛇ\nᛈ\nᛃ\nᛁ\nᚾ\nᚺ\nᚹ\nᚷ\nᚲ\nᚱ\nᚨ\nᚦ\nᚢ\nᚠ\nᛞ\nᛟ\nᛝ\nᛜ\nᛚ\nᛗ\nᛖ\nᛒ\nᛏ", "align": "center"}
+                    ]
+                }
+            ]
+        },
+        {"type": "separator", "char": "━"},
+        {"type": "label", "text": "♈   ♉   ♊   ♋   ♌   ♍   ♎   ♏   ♐   ♑   ♒   ♓", "align": "center"},
+        {"type": "separator", "char": "━"},
+        {"type": "label", "text": "∞   G  A  Z  E     I  N  T  O     T  H  E     V  O  I  D   ∞", "align": "center"}
+    ]
+}

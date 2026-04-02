@@ -1,0 +1,128 @@
+{
+    "type": "box", "title": "❋  F L O W E R   O F   L I F E  ❋", "style": "heavy",
+    "children": [
+        {"type": "label", "text": "「 THE GENESIS PATTERN — BLUEPRINT OF CREATION 」", "align": "center"},
+        {"type": "separator", "char": "━"},
+        {
+            "type": "canvas", "mode": "block", "w": 90, "h": 50,
+            "draw": [
+                {"cmd": "circle", "cx": 90, "cy": 50, "r": 37},
+                {"cmd": "circle", "cx": 90, "cy": 50, "r": 35},
+
+                {"cmd": "circle", "cx": 30, "cy": 50, "r": 10},
+                {"cmd": "circle", "cx": 50, "cy": 50, "r": 10},
+                {"cmd": "circle", "cx": 70, "cy": 50, "r": 10},
+                {"cmd": "circle", "cx": 90, "cy": 50, "r": 10},
+                {"cmd": "circle", "cx": 110, "cy": 50, "r": 10},
+                {"cmd": "circle", "cx": 130, "cy": 50, "r": 10},
+                {"cmd": "circle", "cx": 150, "cy": 50, "r": 10},
+
+                {"cmd": "circle", "cx": 40, "cy": 41, "r": 10},
+                {"cmd": "circle", "cx": 60, "cy": 41, "r": 10},
+                {"cmd": "circle", "cx": 80, "cy": 41, "r": 10},
+                {"cmd": "circle", "cx": 100, "cy": 41, "r": 10},
+                {"cmd": "circle", "cx": 120, "cy": 41, "r": 10},
+                {"cmd": "circle", "cx": 140, "cy": 41, "r": 10},
+
+                {"cmd": "circle", "cx": 40, "cy": 59, "r": 10},
+                {"cmd": "circle", "cx": 60, "cy": 59, "r": 10},
+                {"cmd": "circle", "cx": 80, "cy": 59, "r": 10},
+                {"cmd": "circle", "cx": 100, "cy": 59, "r": 10},
+                {"cmd": "circle", "cx": 120, "cy": 59, "r": 10},
+                {"cmd": "circle", "cx": 140, "cy": 59, "r": 10},
+
+                {"cmd": "circle", "cx": 50, "cy": 32, "r": 10},
+                {"cmd": "circle", "cx": 70, "cy": 32, "r": 10},
+                {"cmd": "circle", "cx": 90, "cy": 32, "r": 10},
+                {"cmd": "circle", "cx": 110, "cy": 32, "r": 10},
+                {"cmd": "circle", "cx": 130, "cy": 32, "r": 10},
+
+                {"cmd": "circle", "cx": 50, "cy": 68, "r": 10},
+                {"cmd": "circle", "cx": 70, "cy": 68, "r": 10},
+                {"cmd": "circle", "cx": 90, "cy": 68, "r": 10},
+                {"cmd": "circle", "cx": 110, "cy": 68, "r": 10},
+                {"cmd": "circle", "cx": 130, "cy": 68, "r": 10},
+
+                {"cmd": "circle", "cx": 60, "cy": 23, "r": 10},
+                {"cmd": "circle", "cx": 80, "cy": 23, "r": 10},
+                {"cmd": "circle", "cx": 100, "cy": 23, "r": 10},
+                {"cmd": "circle", "cx": 120, "cy": 23, "r": 10},
+
+                {"cmd": "circle", "cx": 60, "cy": 77, "r": 10},
+                {"cmd": "circle", "cx": 80, "cy": 77, "r": 10},
+                {"cmd": "circle", "cx": 100, "cy": 77, "r": 10},
+                {"cmd": "circle", "cx": 120, "cy": 77, "r": 10},
+
+                {"cmd": "circle", "cx": 90, "cy": 50, "r": 1, "fill": true},
+                {"cmd": "circle", "cx": 70, "cy": 50, "r": 1, "fill": true},
+                {"cmd": "circle", "cx": 110, "cy": 50, "r": 1, "fill": true},
+                {"cmd": "circle", "cx": 80, "cy": 41, "r": 1, "fill": true},
+                {"cmd": "circle", "cx": 100, "cy": 41, "r": 1, "fill": true},
+                {"cmd": "circle", "cx": 80, "cy": 59, "r": 1, "fill": true},
+                {"cmd": "circle", "cx": 100, "cy": 59, "r": 1, "fill": true}
+            ]
+        },
+        {"type": "separator", "char": "━"},
+        {"type": "label", "text": "C O N S T R U C T I O N", "align": "center"},
+        {"type": "spacer", "h": 1},
+        {
+            "type": "row", "gap": 3,
+            "children": [
+                {
+                    "type": "box", "title": "VESICA PISCIS", "style": "rounded", "w": 28,
+                    "children": [{
+                        "type": "canvas", "mode": "block", "w": 24, "h": 14,
+                        "draw": [
+                            {"cmd": "circle", "cx": 17, "cy": 14, "r": 7},
+                            {"cmd": "circle", "cx": 31, "cy": 14, "r": 7}
+                        ]
+                    }]
+                },
+                {
+                    "type": "box", "title": "SEED OF LIFE", "style": "rounded", "w": 28,
+                    "children": [{
+                        "type": "canvas", "mode": "block", "w": 24, "h": 14,
+                        "draw": [
+                            {"cmd": "circle", "cx": 24, "cy": 14, "r": 4},
+                            {"cmd": "circle", "cx": 32, "cy": 14, "r": 4},
+                            {"cmd": "circle", "cx": 16, "cy": 14, "r": 4},
+                            {"cmd": "circle", "cx": 28, "cy": 10, "r": 4},
+                            {"cmd": "circle", "cx": 20, "cy": 10, "r": 4},
+                            {"cmd": "circle", "cx": 28, "cy": 18, "r": 4},
+                            {"cmd": "circle", "cx": 20, "cy": 18, "r": 4}
+                        ]
+                    }]
+                },
+                {
+                    "type": "box", "title": "FLOWER", "style": "rounded", "w": 28,
+                    "children": [{
+                        "type": "canvas", "mode": "block", "w": 24, "h": 14,
+                        "draw": [
+                            {"cmd": "circle", "cx": 12, "cy": 14, "r": 3},
+                            {"cmd": "circle", "cx": 18, "cy": 14, "r": 3},
+                            {"cmd": "circle", "cx": 24, "cy": 14, "r": 3},
+                            {"cmd": "circle", "cx": 30, "cy": 14, "r": 3},
+                            {"cmd": "circle", "cx": 36, "cy": 14, "r": 3},
+                            {"cmd": "circle", "cx": 15, "cy": 11, "r": 3},
+                            {"cmd": "circle", "cx": 21, "cy": 11, "r": 3},
+                            {"cmd": "circle", "cx": 27, "cy": 11, "r": 3},
+                            {"cmd": "circle", "cx": 33, "cy": 11, "r": 3},
+                            {"cmd": "circle", "cx": 15, "cy": 17, "r": 3},
+                            {"cmd": "circle", "cx": 21, "cy": 17, "r": 3},
+                            {"cmd": "circle", "cx": 27, "cy": 17, "r": 3},
+                            {"cmd": "circle", "cx": 33, "cy": 17, "r": 3},
+                            {"cmd": "circle", "cx": 18, "cy": 8, "r": 3},
+                            {"cmd": "circle", "cx": 24, "cy": 8, "r": 3},
+                            {"cmd": "circle", "cx": 30, "cy": 8, "r": 3},
+                            {"cmd": "circle", "cx": 18, "cy": 20, "r": 3},
+                            {"cmd": "circle", "cx": 24, "cy": 20, "r": 3},
+                            {"cmd": "circle", "cx": 30, "cy": 20, "r": 3}
+                        ]
+                    }]
+                }
+            ]
+        },
+        {"type": "separator", "char": "━"},
+        {"type": "label", "text": "◉  FROM THE VOID, ALL FORM EMERGES  ◉", "align": "center"}
+    ]
+}

@@ -1,0 +1,248 @@
+{
+    "type": "box",
+    "title": "◆ H Y P ░ R D I ▓ E N S ░ O N █ L   T R █ N S ░ T   V ▒ H ▓ C █ E ◆",
+    "style": "double",
+    "children": [
+        {
+            "type": "label",
+            "text": "▸ TR░NSI▒: M█MBRANE ████BREACH████  ◆  DIM-37 →→→ D░M-??  ◆  VEL▒CITY: ∞.??c ◂",
+            "align": "center"
+        },
+        {
+            "type": "label",
+            "text": "!! AL▓RT: DIM░NSIONAL MEMBR▒NE INT▓GRITY FAIL░RE — RE▒LITY PH▓SE UNST░BLE !!",
+            "align": "center"
+        },
+        {
+            "type": "label",
+            "text": "░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░",
+            "align": "center"
+        },
+        {"type": "separator", "char": "═", "title": "!! ACTIVE TRANSIT — ▓▓▓ !!"},
+        {
+            "type": "row",
+            "gap": 1,
+            "children": [
+                {
+                    "type": "box",
+                    "title": "NAV ▒RRAY",
+                    "style": "single",
+                    "w": 20,
+                    "children": [
+                        {"type": "label", "text": "ORIG░N"},
+                        {"type": "label", "text": "  DIM-3░ ░░░░"},
+                        {"type": "label", "text": "  ᚠ ░ ᚦ ░ ᚱ"},
+                        {"type": "spacer", "h": 1},
+                        {"type": "label", "text": "TR░NSIT"},
+                        {"type": "label", "text": "  θ: ░░.░°"},
+                        {"type": "label", "text": "  φ: ░░░.░°"},
+                        {"type": "label", "text": "  ψ: ERR:NaN"},
+                        {"type": "spacer", "h": 1},
+                        {"type": "label", "text": "V▓CTOR"},
+                        {"type": "label", "text": "  ╱╲░╲╱░╱╲"},
+                        {"type": "label", "text": "  ░▒▓▒░▓▒░▓"},
+                        {"type": "label", "text": "  ▓░█▒░▓▒░█"},
+                        {"type": "spacer", "h": 1},
+                        {"type": "label", "text": "PH░SE L▒CK"},
+                        {"type": "label", "text": "  ○──○──○"},
+                        {"type": "label", "text": "  !! FAILED"},
+                        {"type": "spacer", "h": 1},
+                        {"type": "label", "text": "B░ARING"},
+                        {"type": "label", "text": "  ░ ░ ░ ░ ░"}
+                    ]
+                },
+                {
+                    "type": "box",
+                    "title": "◈ M░MBRANE V░EWPORT ◈",
+                    "style": "heavy",
+                    "children": [
+                        {
+                            "type": "canvas",
+                            "mode": "block",
+                            "w": 40,
+                            "h": 20,
+                            "draw": [
+                                {"cmd": "circle", "cx": 40, "cy": 20, "r": 18},
+                                {"cmd": "circle", "cx": 43, "cy": 19, "r": 18},
+                                {"cmd": "circle", "cx": 46, "cy": 17, "r": 16},
+                                {"cmd": "circle", "cx": 40, "cy": 20, "r": 12},
+                                {"cmd": "circle", "cx": 36, "cy": 22, "r": 12},
+                                {"cmd": "circle", "cx": 44, "cy": 18, "r": 11},
+                                {"cmd": "circle", "cx": 40, "cy": 20, "r": 7},
+                                {"cmd": "circle", "cx": 42, "cy": 19, "r": 7},
+                                {"cmd": "circle", "cx": 42, "cy": 20, "r": 2, "fill": true},
+                                {"cmd": "line", "x0": 40, "y0": 0, "x1": 40, "y1": 40},
+                                {"cmd": "line", "x0": 0, "y0": 20, "x1": 80, "y1": 20},
+                                {"cmd": "line", "x0": 0, "y0": 0, "x1": 80, "y1": 40},
+                                {"cmd": "line", "x0": 80, "y0": 0, "x1": 0, "y1": 40},
+                                {"cmd": "line", "x0": 15, "y0": 3, "x1": 72, "y1": 35},
+                                {"cmd": "line", "x0": 62, "y0": 2, "x1": 18, "y1": 38},
+                                {"cmd": "polygon", "points": [[40, 8], [19, 26], [61, 26]]},
+                                {"cmd": "polygon", "points": [[44, 33], [23, 15], [65, 15]]},
+                                {"cmd": "polygon", "points": [[48, 35], [27, 17], [69, 17]]},
+                                {"cmd": "polygon", "points": [[56, 19], [48, 13], [32, 15], [25, 21], [34, 27], [47, 25]]},
+                                {"cmd": "circle", "cx": 40, "cy": 8, "r": 1, "fill": true},
+                                {"cmd": "circle", "cx": 40, "cy": 32, "r": 1, "fill": true},
+                                {"cmd": "circle", "cx": 19, "cy": 26, "r": 1, "fill": true},
+                                {"cmd": "circle", "cx": 61, "cy": 26, "r": 1, "fill": true},
+                                {"cmd": "circle", "cx": 23, "cy": 15, "r": 1, "fill": true},
+                                {"cmd": "circle", "cx": 65, "cy": 15, "r": 1, "fill": true},
+                                {"cmd": "rect", "x0": 66, "y0": 1, "x1": 78, "y1": 9, "fill": true},
+                                {"cmd": "rect", "x0": 1, "y0": 31, "x1": 15, "y1": 38, "fill": true},
+                                {"cmd": "rect", "x0": 33, "y0": 0, "x1": 47, "y1": 3, "fill": true},
+                                {"cmd": "dot", "x": 12, "y": 5},
+                                {"cmd": "dot", "x": 68, "y": 12},
+                                {"cmd": "dot", "x": 8, "y": 28},
+                                {"cmd": "dot", "x": 58, "y": 38},
+                                {"cmd": "dot", "x": 22, "y": 3},
+                                {"cmd": "dot", "x": 75, "y": 30},
+                                {"cmd": "text", "x": 2, "y": 5, "text": "DIM37"},
+                                {"cmd": "text", "x": 52, "y": 5, "text": "DIM??"},
+                                {"cmd": "text", "x": 26, "y": 35, "text": "BREACH"}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "box",
+                    "title": "D░M ░░ATUS",
+                    "style": "dashed",
+                    "w": 20,
+                    "children": [
+                        {"type": "label", "text": "TARG░T"},
+                        {"type": "label", "text": "  D░M-?? ▓▓▓▓"},
+                        {"type": "label", "text": "  ░ ░ ░ ░ ░"},
+                        {"type": "spacer", "h": 1},
+                        {"type": "label", "text": "ST░B░LITY"},
+                        {"type": "label", "text": "  ▓▓▓▓▓▓▓▓▓▓"},
+                        {"type": "label", "text": "  ░░.░% !!"},
+                        {"type": "spacer", "h": 1},
+                        {"type": "label", "text": "H░RM░N░CS"},
+                        {"type": "label", "text": "  ░░░░░░░░░░"},
+                        {"type": "label", "text": "  λ: ░░░ ░z"},
+                        {"type": "spacer", "h": 1},
+                        {"type": "label", "text": "FL░X D░NS░TY"},
+                        {"type": "label", "text": "  ██████████"},
+                        {"type": "label", "text": "  !! ░V░RFL░W"},
+                        {"type": "spacer", "h": 1},
+                        {"type": "label", "text": "M░MBR░N░"},
+                        {"type": "label", "text": "  █░▓█░▓█░▓█"},
+                        {"type": "label", "text": "  !! BR░░CH"}
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "label",
+            "text": "▓▓▓▓▓▓▓▓▓▓▓▓ REALITY PHASE MISMATCH — RECALIBRATING ▓▓▓▓▓▓▓▓▓▓▓▓",
+            "align": "center"
+        },
+        {
+            "type": "label",
+            "text": "▙▜▛▟▚▙▜▛▟▚ DIMENSIONAL BLEED: FOREIGN INTERFACE LAYER ▚▟▛▜▙▚▟▛▜▙",
+            "align": "center"
+        },
+        {
+            "type": "box",
+            "title": "▙▜▛ UNKNOWN SUBSYSTEM ▟▜▙",
+            "style": "heavy",
+            "children": [
+                {
+                    "type": "label",
+                    "text": "⌬ ⏣ ⎔ ⏥ ⊞ ⊟ ⌺ ⍾ ⎍ ⏚ ⌬ ⏣ ⎔ ⏥ ⊞ ⊟ ⌺ ⍾ ⎍ ⏚",
+                    "align": "center"
+                },
+                {
+                    "type": "label",
+                    "text": "!! ORIGIN SYSTEM CANNOT DECODE — FOREIGN PROTOCOL !!",
+                    "align": "center"
+                }
+            ]
+        },
+        {
+            "type": "label",
+            "text": "░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░",
+            "align": "center"
+        },
+        {"type": "separator", "char": "═", "title": "!! DR░VE SYST▒MS — CRIT░CAL !!"},
+        {
+            "type": "row",
+            "gap": 4,
+            "children": [
+                {"type": "bar", "label": "DRIVE CORE", "value": 100, "max": 100, "width": 12},
+                {"type": "bar", "label": "SHIELDS", "value": 8, "max": 100, "width": 12, "filled": "▒"}
+            ]
+        },
+        {
+            "type": "label",
+            "text": "▓░▒█░▓▒░█▓░▒▓█░▒ BUFFER OVERFLOW ░▒▓█░▒▓░█▓▒░█▓░▒",
+            "align": "center"
+        },
+        {
+            "type": "row",
+            "gap": 4,
+            "children": [
+                {"type": "bar", "label": "DIM FLUX", "value": 100, "max": 100, "width": 12},
+                {"type": "bar", "label": "MEMBRANE", "value": 3, "max": 100, "width": 12}
+            ]
+        },
+        {
+            "type": "label",
+            "text": "░░░ DATA STREAM CORRUPTED — REBOOT REQUIRED ░░░",
+            "align": "center"
+        },
+        {
+            "type": "row",
+            "gap": 4,
+            "children": [
+                {"type": "bar", "label": "PHASE LOCK", "value": 0, "max": 100, "width": 12},
+                {"type": "bar", "label": "RESONANCE", "value": 100, "max": 100, "width": 12, "filled": "▓"}
+            ]
+        },
+        {
+            "type": "label",
+            "text": "░░░ DIMENSIONAL ANCHOR LOST — ENGAGING EMERGENCY PROTOCOL ░░░",
+            "align": "center"
+        },
+        {"type": "spacer", "h": 1},
+        {
+            "type": "box",
+            "title": "M░MBRANE CR░SS-S▓CTION",
+            "style": "dashed",
+            "children": [
+                {
+                    "type": "label",
+                    "text": "D░M-37  ░▒▓▒█▒▓░▓█▒░▓█▒▓████████████▓█░▓█░▒▓░█▒░▓██░▒▓░█  D░M-??",
+                    "align": "center"
+                }
+            ]
+        },
+        {"type": "separator", "char": "═", "title": "░NSTR░M░NT K░Y"},
+        {
+            "type": "legend",
+            "entries": [
+                {"key": "◉─░○", "val": "Phase lock — !! ALL NOD░S LOST"},
+                {"key": "∿░░", "val": "Harmonic wav▓form — !! NO S░GNAL"},
+                {"key": "ᚠ░ᚦ", "val": "Elder Futhark — !! COORD░NATES CORR░PTED"},
+                {"key": "░▒▓█", "val": "M▓mbrane d░nsity — !! GRADI░NT COLLAPS░D"},
+                {"key": "▓█░▓", "val": "Int▓rface corr░ption — !! DIM░NSIONAL BL░ED"},
+                {"key": "▙▜▛▟▚", "val": "!! UNKN░WN — FOR░IGN DIM░NSION !!"}
+            ]
+        },
+        {
+            "type": "label",
+            "text": "!! INT▓RDIM▒NSIONAL TR░NSIT AUTH░RITY — ████ CONN▓CTION S▓VER▓D ████ !!",
+            "align": "center"
+        },
+        {
+            "type": "label",
+            "text": "░▒▓█▓▒░ S░GNAL L░ST ░▒▓█▓▒░",
+            "align": "center"
+        },
+        {
+            "type": "label",
+            "text": "░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░",
+            "align": "center"
+        }
+    ]
+}

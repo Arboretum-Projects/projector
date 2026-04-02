@@ -1,0 +1,167 @@
+{
+    "type": "box",
+    "title": "◆ H Y P E R D I M E N S I O N A L   T R A N S I T   V E H I C L E ◆",
+    "style": "double",
+    "children": [
+        {
+            "type": "label",
+            "text": "▸ TRANSIT: MEMBRANE PENETRATION  ◆  DIM-37 → DIM-42  ◆  VELOCITY: 0.73c ◂",
+            "align": "center"
+        },
+        {
+            "type": "label",
+            "text": "PILOT: ᚨᛚᛖᚦ   ◈   CLEARANCE: OMEGA-7   ◈   HULL PHASE: TRANSLUCENT",
+            "align": "center"
+        },
+        {"type": "separator", "char": "═", "title": "◈ ACTIVE TRANSIT ◈"},
+        {
+            "type": "row",
+            "gap": 1,
+            "children": [
+                {
+                    "type": "box",
+                    "title": "NAV ARRAY",
+                    "style": "single",
+                    "w": 20,
+                    "children": [
+                        {"type": "label", "text": "ORIGIN"},
+                        {"type": "label", "text": "  DIM-37 ░░░░"},
+                        {"type": "label", "text": "  ᚠ ᚢ ᚦ ᚨ ᚱ"},
+                        {"type": "spacer", "h": 1},
+                        {"type": "label", "text": "TRANSIT"},
+                        {"type": "label", "text": "  θ:  47.3°"},
+                        {"type": "label", "text": "  φ: 118.7°"},
+                        {"type": "label", "text": "  ψ: 293.1°"},
+                        {"type": "spacer", "h": 1},
+                        {"type": "label", "text": "VECTOR"},
+                        {"type": "label", "text": "  ╱╲╱╲╱╲╱╲"},
+                        {"type": "label", "text": "  ╲╱╲╱╲╱╲╱"},
+                        {"type": "spacer", "h": 1},
+                        {"type": "label", "text": "PHASE LOCK"},
+                        {"type": "label", "text": "  ◉──◉──◉"},
+                        {"type": "label", "text": "  ENGAGED"},
+                        {"type": "spacer", "h": 1},
+                        {"type": "label", "text": "BEARING"},
+                        {"type": "label", "text": "  ☽ ◐ ○ ◑ ☾"}
+                    ]
+                },
+                {
+                    "type": "box",
+                    "title": "◈ MEMBRANE VIEWPORT ◈",
+                    "style": "heavy",
+                    "children": [
+                        {
+                            "type": "canvas",
+                            "mode": "block",
+                            "w": 40,
+                            "h": 20,
+                            "draw": [
+                                {"cmd": "circle", "cx": 40, "cy": 20, "r": 18},
+                                {"cmd": "circle", "cx": 40, "cy": 20, "r": 12},
+                                {"cmd": "circle", "cx": 40, "cy": 20, "r": 7},
+                                {"cmd": "circle", "cx": 40, "cy": 20, "r": 2, "fill": true},
+                                {"cmd": "line", "x0": 40, "y0": 0, "x1": 40, "y1": 40},
+                                {"cmd": "line", "x0": 0, "y0": 20, "x1": 80, "y1": 20},
+                                {"cmd": "line", "x0": 0, "y0": 0, "x1": 80, "y1": 40},
+                                {"cmd": "line", "x0": 80, "y0": 0, "x1": 0, "y1": 40},
+                                {"cmd": "polygon", "points": [[40, 8], [19, 26], [61, 26]]},
+                                {"cmd": "polygon", "points": [[40, 32], [19, 14], [61, 14]]},
+                                {"cmd": "polygon", "points": [[54, 20], [47, 14], [33, 14], [26, 20], [33, 26], [47, 26]]},
+                                {"cmd": "circle", "cx": 40, "cy": 8, "r": 1, "fill": true},
+                                {"cmd": "circle", "cx": 40, "cy": 32, "r": 1, "fill": true},
+                                {"cmd": "circle", "cx": 19, "cy": 26, "r": 1, "fill": true},
+                                {"cmd": "circle", "cx": 61, "cy": 26, "r": 1, "fill": true},
+                                {"cmd": "circle", "cx": 19, "cy": 14, "r": 1, "fill": true},
+                                {"cmd": "circle", "cx": 61, "cy": 14, "r": 1, "fill": true},
+                                {"cmd": "text", "x": 2, "y": 1, "text": "DIM37"},
+                                {"cmd": "text", "x": 58, "y": 1, "text": "DIM42"},
+                                {"cmd": "text", "x": 24, "y": 35, "text": "TRANSIT"}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "box",
+                    "title": "DIM STATUS",
+                    "style": "single",
+                    "w": 20,
+                    "children": [
+                        {"type": "label", "text": "TARGET"},
+                        {"type": "label", "text": "  DIM-42 ▓▓▓▓"},
+                        {"type": "label", "text": "  ᚲ ᚷ ᚹ ᚺ ᚾ"},
+                        {"type": "spacer", "h": 1},
+                        {"type": "label", "text": "STABILITY"},
+                        {"type": "label", "text": "  ▁▂▃▄▅▆▇█"},
+                        {"type": "label", "text": "  97.3%"},
+                        {"type": "spacer", "h": 1},
+                        {"type": "label", "text": "HARMONICS"},
+                        {"type": "label", "text": "  ∿∿∿∿∿∿∿∿"},
+                        {"type": "label", "text": "  λ: 432 Hz"},
+                        {"type": "spacer", "h": 1},
+                        {"type": "label", "text": "FLUX DENSITY"},
+                        {"type": "label", "text": "  ░▒▓█▓▒░"},
+                        {"type": "label", "text": "  12.7 Wb"},
+                        {"type": "spacer", "h": 1},
+                        {"type": "label", "text": "MEMBRANE"},
+                        {"type": "label", "text": "  ▐████████▌"},
+                        {"type": "label", "text": "  7.3 PLANCK"}
+                    ]
+                }
+            ]
+        },
+        {"type": "separator", "char": "═", "title": "◈ DRIVE SYSTEMS ◈"},
+        {
+            "type": "row",
+            "gap": 4,
+            "children": [
+                {"type": "bar", "label": "DRIVE CORE", "value": 87, "max": 100, "width": 12},
+                {"type": "bar", "label": "SHIELDS", "value": 64, "max": 100, "width": 12, "filled": "▓"}
+            ]
+        },
+        {
+            "type": "row",
+            "gap": 4,
+            "children": [
+                {"type": "bar", "label": "DIM FLUX", "value": 93, "max": 100, "width": 12},
+                {"type": "bar", "label": "MEMBRANE", "value": 71, "max": 100, "width": 12, "filled": "▓"}
+            ]
+        },
+        {
+            "type": "row",
+            "gap": 4,
+            "children": [
+                {"type": "bar", "label": "PHASE LOCK", "value": 100, "max": 100, "width": 12},
+                {"type": "bar", "label": "RESONANCE", "value": 56, "max": 100, "width": 12, "filled": "▒"}
+            ]
+        },
+        {"type": "spacer", "h": 1},
+        {
+            "type": "box",
+            "title": "MEMBRANE CROSS-SECTION",
+            "style": "rounded",
+            "children": [
+                {
+                    "type": "label",
+                    "text": "DIM-37  ░░░░░░▒▒▒▒▒▓▓▓▓▓▓████████████▓▓▓▓▓▓▒▒▒▒▒░░░░░░  DIM-42",
+                    "align": "center"
+                }
+            ]
+        },
+        {"type": "separator", "title": "INSTRUMENT KEY"},
+        {
+            "type": "legend",
+            "entries": [
+                {"key": "◉", "val": "Phase-locked dimensional node"},
+                {"key": "∿", "val": "Harmonic waveform resonance"},
+                {"key": "ᚠᚢᚦ", "val": "Elder Futhark dimensional coordinates"},
+                {"key": "░▒▓█", "val": "Membrane density gradient"},
+                {"key": "▁▂▃▆▇", "val": "Dimensional stability curve"}
+            ]
+        },
+        {
+            "type": "label",
+            "text": "◆ INTERDIMENSIONAL TRANSIT AUTHORITY — CLEARANCE VERIFIED ◆",
+            "align": "center"
+        }
+    ]
+}

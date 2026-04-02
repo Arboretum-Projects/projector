@@ -1,0 +1,49 @@
+{
+  "type": "box",
+  "style": "double",
+  "title": "XVII",
+  "children": [
+    {
+      "type": "board",
+      "w": 38,
+      "h": 28,
+      "children": [
+        {"type": "label", "x": 10, "y": 0, "text": "T H E   S T A R"},
+
+        {"type": "label", "x": 5, "y": 2, "text": "✧       ✦   ★   ✦       ✧"},
+        {"type": "label", "x": 3, "y": 3, "text": "·   ✧               ✧   ·"},
+        {"type": "label", "x": 7, "y": 4, "text": "·                   ·"},
+
+        {"type": "label", "x": 14, "y": 5, "text": "✶✶✶✶✶✶✶✶✶"},
+        {"type": "label", "x": 13, "y": 6, "text": "✶ ✧     ✧ ✶"},
+        {"type": "label", "x": 12, "y": 7, "text": "✶   ⟡   ⟡   ✶"},
+        {"type": "label", "x": 12, "y": 8, "text": "✶    ◠◠◠    ✶"},
+        {"type": "label", "x": 11, "y": 9, "text": "✶             ✶"},
+        {"type": "label", "x": 10, "y": 10, "text": "✶  ╱         ╲  ✶"},
+        {"type": "label", "x": 9, "y": 11, "text": "✶  ╱    ☥      ╲  ✶"},
+        {"type": "label", "x": 8, "y": 12, "text": "✶  │             │  ✶"},
+        {"type": "label", "x": 8, "y": 13, "text": "✶  │             │  ✶"},
+
+        {"type": "label", "x": 2, "y": 14, "text": "∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿"},
+        {"type": "label", "x": 2, "y": 15, "text": "≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋≋"},
+        {"type": "label", "x": 2, "y": 16, "text": "∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿"},
+
+        {"type": "label", "x": 5, "y": 13, "text": "⚗"},
+        {"type": "label", "x": 32, "y": 13, "text": "⚗"},
+        {"type": "label", "x": 4, "y": 14, "text": "▼"},
+        {"type": "label", "x": 33, "y": 14, "text": "▼"},
+
+        {"type": "label", "x": 8, "y": 18, "text": "☽                    ☾"},
+        {"type": "label", "x": 6, "y": 19, "text": "♈  ♉  ♊  ♋  ♌  ♍  ♎"},
+        {"type": "label", "x": 6, "y": 20, "text": "♏  ♐  ♑  ♒  ♓  ⊕  ⊗"},
+
+        {"type": "label", "x": 14, "y": 22, "text": "ᚹ ᚨ ᛏ ᛖ ᚱ"},
+
+        {"type": "label", "x": 7, "y": 24, "text": "Hope pours endlessly"},
+        {"type": "label", "x": 6, "y": 25, "text": "from vessel to stream,"},
+        {"type": "label", "x": 7, "y": 26, "text": "stream to ocean, and"},
+        {"type": "label", "x": 8, "y": 27, "text": "ocean back to star."}
+      ]
+    }
+  ]
+}
