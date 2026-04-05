@@ -165,10 +165,21 @@
           const ch = line[col];
           if (ch === ' ') continue;
           const x = col * cell.w;
-          // Center character in cell
           const charW = ctx.measureText(ch).width;
-          const xOffset = (cell.w - charW) / 2;
-          ctx.fillText(ch, x + xOffset, y);
+
+          if (charW > cell.w * 1.05) {
+            // Wide character — scale horizontally to fit the cell
+            ctx.save();
+            const scale = cell.w / charW;
+            ctx.translate(x + cell.w / 2, y);
+            ctx.scale(scale, 1);
+            ctx.fillText(ch, -charW / 2, 0);
+            ctx.restore();
+          } else {
+            // Normal character — center in cell
+            const xOffset = (cell.w - charW) / 2;
+            ctx.fillText(ch, x + xOffset, y);
+          }
         }
       }
 
