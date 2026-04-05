@@ -166,16 +166,7 @@
           if (ch === ' ') continue;
           const x = col * cell.w;
 
-          ctx.save();
-          // Clip to cell boundary — no character can overflow
-          ctx.beginPath();
-          ctx.rect(x, row * cell.h, cell.w, cell.h);
-          ctx.clip();
-          // Center character in cell
-          const charW = ctx.measureText(ch).width;
-          const xOffset = (cell.w - charW) / 2;
-          ctx.fillText(ch, x + xOffset, y);
-          ctx.restore();
+          ctx.fillText(ch, x, y);
         }
       }
 
