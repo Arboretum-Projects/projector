@@ -159,12 +159,23 @@
         const row = scene.rows[r];
         const y = r * cell.h + yOff;
         for (const entry of row) {
-          const col = entry[0];  // visual column
-          const ch = entry[1];   // character
-          const cw = entry[2];   // cell width (1 or 2)
+          const col = entry[0];
+          const ch = entry[1];
+          const cw = entry[2];  // 1 or 2 cells
           const x = col * cell.w;
-          // Draw character at exact grid position
-          ctx.fillText(ch, x, y);
+          const slotW = cw * cell.w;
+          const charW = ctx.measureText(ch).width;
+
+          if (charW > slotW + 0.5) {
+            // Glyph wider than its slot — scale to fit
+            ctx.save();
+            ctx.translate(x, y);
+            ctx.scale(slotW / charW, 1);
+            ctx.fillText(ch, 0, 0);
+            ctx.restore();
+          } else {
+            ctx.fillText(ch, x, y);
+          }
         }
       }
 
