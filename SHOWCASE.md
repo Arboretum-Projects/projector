@@ -216,7 +216,7 @@ Status panel auto-builds a box containing bars, inventory grid, and turn log fro
 
 ## 11. Braille Subpixel Canvas — 2×4 Dots Per Cell ⚠️ TERMINAL ONLY
 
-> **Note:** Braille output only renders correctly in a terminal — characters have inconsistent widths in markdown code blocks. Only use when explicitly requested, output to terminal only.
+> **Note:** Braille output requires a monospace terminal for correct rendering. Character widths vary in markdown code blocks. Use only when targeting terminal output.
 
 Each terminal cell holds a 2×4 braille dot matrix (U+2800–U+28FF), giving **160×80 effective resolution** in an 80×20 space. Supports lines, circles, rectangles, polygons, and a built-in 3×4 bitmap font with auto-snap (text renders unified at any y position).
 
@@ -336,7 +336,7 @@ All auto-sized from JSON — 30-char dungeon map, party stats, inventory, turn l
 
 ## 15. ASCII-Safe Mode — `--ascii` Flag
 
-Same JSON input, same engine — just pass `--ascii` and all Unicode box-drawing is substituted to pure ASCII. Nothing else changes.
+Same JSON input, same engine. Pass `--ascii` and all Unicode box-drawing is substituted to pure ASCII. Everything else stays identical.
 
 ```
 += SAFE =================+

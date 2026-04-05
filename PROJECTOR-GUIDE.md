@@ -110,7 +110,7 @@ Bordered container with optional title. The workhorse of every layout.
 }
 ```
 
-**Key insight:** A box can either have `content` (text) OR `children` (nested elements), not both. Children take precedence.
+**Key insight:** A box accepts either `content` (text) or `children` (nested elements). If both are present, children take precedence.
 
 **Style hierarchy for nesting:** double → single → rounded (outer to inner).
 
@@ -218,12 +218,12 @@ Formatted key-value display with aligned columns.
 }
 ```
 
-⚠️ The field is `entries`, not `items`.
+⚠️ The field is `entries` (easily confused with `items`).
 
 Entries can also be a dict: `{"●": "Active", "○": "Inactive"}` or strings with colons: `["●: Active", "○: Inactive"]`.
 
 #### `grid` — Raw Pre-formatted Lines
-Pastes raw text lines directly. No wrapping, no processing. Use when you've pre-composed ASCII art and just want to embed it.
+Pastes raw text lines directly, preserving exact formatting. Use when you've pre-composed ASCII art and just want to embed it.
 
 ```json
 {
@@ -430,7 +430,7 @@ Even rows (0, 2, 4...) are wide; odd rows (1, 3...) are narrow (offset right). T
 }
 ```
 
-⚠️ **Braille mode is TERMINAL ONLY.** Braille characters do not render at consistent widths in markdown viewers, chat apps, or web UIs. Use `"mode": "block"` for universal compatibility.
+⚠️ **Braille mode is TERMINAL ONLY.** Braille characters require a monospace terminal for consistent widths. Use `"mode": "block"` for universal compatibility.
 
 Coordinate space is subpixel:
 - Block mode: w×2 by h×2 (e.g., 40 cells → 80×20 subpixels)
@@ -689,7 +689,7 @@ Inside a box, separators automatically connect to the box's borders:
 └──────────────────┘
 ```
 
-Free-standing separators (not in a box) render as plain lines.
+Free-standing separators (outside a box) render as plain lines.
 
 ### The Grid Escape Hatch
 
@@ -729,7 +729,7 @@ These are hard-won lessons from building 35 examples.
 
 ### 1. Double-Width Unicode
 Some Unicode characters (mystical symbols, emoji, CJK) render as 2 cells wide in monospace fonts. The engine handles measurement correctly, but you need to account for this in labels on boards:
-- **One symbol per label** on spatial layouts. Don't mix wide and narrow characters in a label you're aligning.
+- **One symbol per label** on spatial layouts. Keep wide and narrow characters in separate labels when aligning.
 - The engine's `char_width()` uses `unicodedata.east_asian_width()` — trust it.
 
 ### 2. Diagonal Alignment
@@ -737,11 +737,11 @@ For diagonal lines in boards (using ╱ and ╲ labels):
 - **Consistent step=1.** Each row, the x coordinate shifts by exactly 1.
 - `\` descends: x increases as y increases (6, 7, 8, 9)
 - `/` descends: x decreases as y increases (24, 23, 22, 21)
-- **Connect to markers, not letters.** Diagonals visually connect to ◆, ■, ●, ▫, ▪ — not to text labels like "R" or "E".
+- **Connect to markers.** Diagonals visually connect to ◆, ■, ●, ▫, ▪. Text labels like "R" or "E" sit at different visual anchors.
 
 ### 3. Waveforms
 For audio-style waveforms (╱╲ patterns):
-- Use ONLY ╱ and ╲. Do NOT mix with ─ (horizontal dash) — they don't visually connect.
+- Use ONLY ╱ and ╲. Keep ─ (horizontal dash) separate: they connect at different heights within a cell.
 - Center line = even alternation. Peaks/troughs = stacked ╱╱ or ╲╲.
 
 ### 4. Verify Alignment with Code
@@ -753,7 +753,7 @@ for j, ch in enumerate(line):
 ```
 
 ### 5. Legend Uses `entries`
-The legend element reads `entries`, not `items`. Easy to mix up.
+The legend element reads `entries` (easily confused with `items`).
 
 ### 6. Fills Render Under Labels
 In boards, element render order is list order — later children render on top. Place fills BEFORE labels so text shows on top of shading:
@@ -766,7 +766,7 @@ In boards, element render order is list order — later children render on top. 
 ```
 
 ### 7. Compute Inner Dimensions Before Placing Children
-The engine does not clip content at borders. Anything placed past the inner boundary renders past the border. Always compute the inner budget first:
+The engine renders all content, even past borders. Anything placed past the inner boundary bleeds through. Always compute the inner budget first:
 
 ```
 bordered (default pad=1):  inner_w = w - 4,  inner_h = h - 4
@@ -776,10 +776,10 @@ general:                   inner = size - 2 * (border + padding)
 
 Then verify every child fits: `x + child_w <= inner_w` and `y + child_h <= inner_h`.
 
-A full-interior fill for a `"w": 40, "h": 20` bordered board is `"w": 36, "h": 16`. Not 40x20.
+A full-interior fill for a `"w": 40, "h": 20` bordered board is `"w": 36, "h": 16` (accounting for border + padding on each side).
 
 ### 8. Fill Gradients Are Asymmetric
-The gradient index mapping uses `int()` (floor), so the first character in the `chars` array always gets more columns than the last. Two fills with reversed chars (`" ░▒▓"` vs `"▓▒░ "`) produce different density distributions, not a mirror. For perfectly symmetric gradients, use a single centered label with hand-typed characters instead.
+The gradient index mapping uses `int()` (floor), so the first character in the `chars` array always gets more columns than the last. Two fills with reversed chars (`" ░▒▓"` vs `"▓▒░ "`) produce different density distributions, each biased toward its own first character. For perfectly symmetric gradients, use a single centered label with hand-typed characters.
 
 ### 9. Centering Counts All Characters
 `align: center` centers the full string including leading and trailing spaces. A label with `"    ░░▒▒▓▓TEXT▓▓▒▒░░"` (4 leading spaces, 0 trailing) will render visually off-center. Keep decorative text symmetric, or omit padding and let the natural gap between the border and the first visible character serve as the fade.

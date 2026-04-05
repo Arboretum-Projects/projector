@@ -13,7 +13,7 @@ JSON spec  -->  Measure (bottom-up)  -->  Layout (top-down)  -->  Render (to can
 - **Engine:** `projector.py` (~3,200 lines). All 23 element types, the three-pass pipeline, validation, and CLI live here.
 - **Docs:** `PROJECTOR-GUIDE.md` (full composition guide), `SHOWCASE.md` (rendered gallery), `README.md` (public-facing)
 - **Examples:** `examples/` (JSON specs) + 35 built-in examples via `--example NAME`
-- **Tests/scratch:** `tmp/` (not committed)
+- **Tests/scratch:** `tmp/` (gitignored)
 
 ### Running
 
@@ -26,17 +26,17 @@ python3 projector.py --example dashboard    # built-in examples
 ### When editing the engine
 
 - The layout contract: `measure()` sets `_min_w`/`_min_h` (bottom-up), `layout()` receives allocated space from parent (top-down), `render()` draws to canvas.
-- Elements with explicit declared dimensions (`w`/`h` props) must honor them in `layout()`, ignoring parent-allocated sizes. `CanvasElement` and `BoardElement` already do this. If you add a new element with explicit sizing, follow the same pattern.
+- Elements with explicit declared dimensions (`w`/`h` props) must honor them in `layout()`, using their own sizes over parent-allocated ones. `CanvasElement` and `BoardElement` already do this. If you add a new element with explicit sizing, follow the same pattern.
 - Run the built-in examples after changes: `python3 -c "import json; from projector import render_json; [render_json(json.load(open(f))) for f in ['examples/alchemist.json', 'examples/tarot.json']]"`
 
 ## Composition mindset
 
-Every element in a spec exists in relationship to every other element. Before placing anything, consider how it interacts with its neighbors — does it crowd them, does it leave dead space, does it compete for attention or complement it? The goal is harmony: elements that breathe together, reinforce each other's purpose, and produce a result that feels intentional at every level.
+Every element in a spec exists in relationship to every other element. Before placing anything, consider how it interacts with its neighbors: does it give them room, does it fill the space purposefully, does it complement their visual weight? The goal is harmony: elements that breathe together, reinforce each other's purpose, and produce a result that feels intentional at every level.
 
 Practically, this means:
 - **Size elements relative to their context.** A fill that covers the entire board interior, a bar whose width matches the column it sits in, a title whose length fits its border — these choices signal craft. Mismatched sizes signal accidents.
-- **Respect the space.** Padding, gaps, and empty rows aren't wasted — they separate ideas and give the eye room to parse structure. A board packed edge-to-edge can read as noise if poorly designed. If properly designed, it is impactful. A board well considered reads as beneficial design intent.
-- **Layer with intent.** Fills create atmosphere. Labels create meaning. Borders create containment. When all three serve the same composition, the piece elevates. When they fight — a fill bleeding past a border, a label colliding with another — the illusion breaks.
+- **Respect the space.** Padding, gaps, and empty rows serve a purpose: they separate ideas and give the eye room to parse structure. Dense boards read as noise; well-considered boards read as intentional design.
+- **Layer with intent.** Fills create atmosphere. Labels create meaning. Borders create containment. When all three serve the same composition, the piece elevates. Each layer must respect the others: fills stay inside borders, labels occupy clear space.
 - **Work with the engine.** The engine handles borders, alignment, and compositing. Lean into what it guarantees: perfect borders, smart merging, z-order rendering. Let the pipeline do the counting.
 
 ## Hard-won lessons
@@ -62,15 +62,15 @@ Mystical/emoji/CJK characters render 2 cells wide. One symbol per label on board
 
 ### Waveforms
 
-Use ONLY `╱` and `╲`. Do not mix with `─` — they connect at different heights within a cell.
+Use ONLY `╱` and `╲`. Keep `─` separate: it connects at a different height within a cell.
 
 ### Legend uses `entries`
 
-Not `items`. Easy to confuse.
+The field is `entries` (easily confused with `items`).
 
 ### Mirrored gradients need explicit characters
 
-Fill gradients use `int()` to map chars across the width, which floors the index. The first character always gets more columns than the last. Two fills with reversed chars (`" ░▒▓"` and `"▓▒░ "`) produce different density distributions, not a mirror. For symmetric gradients, use a single label with hand-typed characters.
+Fill gradients use `int()` to map chars across the width, which floors the index. The first character always gets more columns than the last. Two fills with reversed chars (`" ░▒▓"` and `"▓▒░ "`) produce different density distributions, each biased toward its own first character. For symmetric gradients, use a single label with hand-typed characters.
 
 ### Spaces inside centered labels break centering
 
